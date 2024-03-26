@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+	<style>
+		body{
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+			row-gap: 4vw;
+			background-color: black;
+		}
+		form{
+			height: 12vw;
+			width: 15vw;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex-direction: column;
+			row-gap: 1vw;
+			transform: scale(2);
+			margin-top: 4vw;
+			background-color: blue;
+			border-radius: 10%;
+		}
+		h1{
+			animation: move 1s infinite;
+			animation-timing-function: ease-in;
+			color:red;
+		}
+		@keyframes move{
+			from{
+				transform: translateX(-10vw);
+			}
+			to{
+				transform: translateX(10vw);
+			}
+		}
+		.add{
+		height: 1.5vw;
+		width: 4vw;
+		font-size: 1vw;
+		font-weight: bold;
+		background-color: white;
+		color: purple;
+		border-radius: 10%;
+		transition: all 0.5s;
+		
+	}
+	.add:hover
+	{
+		background-color: purple;
+		color: white;
+	}
+	
+	</style>
+<body>
+	<h1>Employee Registration</h1>
+	<form action="Registration">
+		<input type="text" placeholder="enter name" name="name">
+		<input type="text" placeholder="enter sal" name="salary">
+		<input type="text" placeholder="enter deptno" name="deptno">
+		<input type="submit" value="submit" class="add">
+	</form>
+
+</body>
+</html>
